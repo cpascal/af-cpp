@@ -1,0 +1,361 @@
+
+Building the Boost C++ Libraries.
+
+
+Performing configuration checks
+
+    - 32-bit                   : yes
+    - x86                      : no
+    - power                    : no
+    - arm                      : yes
+    - has_icu builds           : no
+warning: Graph library does not contain MPI-based parallel components.
+note: to enable them, add "using mpi ;" to your user-config.jam
+    - iconv (libc)             : no
+    - iconv (separate)         : no
+    - icu                      : no
+    - icu (lib64)              : no
+- Boost.Locale needs either iconv or ICU library to be built.
+- Boost.Locale needs either iconv or ICU library to be built.
+- Boost.Locale needs either iconv or ICU library to be built.
+- Boost.Locale needs either iconv or ICU library to be built.
+- Boost.Locale needs either iconv or ICU library to be built.
+- Boost.Locale needs either iconv or ICU library to be built.
+    - gcc visibility           : yes
+    - long double support      : yes
+warning: skipping optional Message Passing Interface (MPI) library.
+note: to enable MPI support, add "using mpi ;" to user-config.jam.
+note: to suppress this message, pass "--without-mpi" to bjam.
+note: otherwise, you can safely ignore this message.
+
+Component configuration:
+
+    - atomic                   : building
+    - chrono                   : building
+    - context                  : building
+    - date_time                : building
+    - exception                : building
+    - filesystem               : building
+    - graph                    : building
+    - graph_parallel           : building
+    - iostreams                : building
+    - locale                   : building
+    - math                     : building
+    - mpi                      : building
+    - program_options          : building
+    - python                   : not building
+    - random                   : building
+    - regex                    : building
+    - serialization            : not building
+    - signals                  : building
+    - system                   : building
+    - test                     : building
+    - thread                   : building
+    - timer                    : building
+    - wave                     : building
+
+...patience...
+...patience...
+...patience...
+...found 6353 targets...
+...updating 27 targets...
+Jamfile</D:/sdk/android-ndk-r8b/sources/boost/libs/context/build>.armasm bin.v2\libs\context\build\gcc-android4.4.3\release\address-model-32\architecture-arm\link-static\runtime-link-static\target-os-linux\threading-multi\asm\make_arm_aapcs_pe_armasm.o
+'armasm' is not recognized as an internal or external command,
+operable program or batch file.
+
+    armasm "bin.v2\libs\context\build\gcc-android4.4.3\release\address-model-32\architecture-arm\link-static\runtime-link-static\target-os-linux\threading-multi\asm\make_arm_aapcs_pe_armasm.o" "libs\context\src\asm\make_arm_aapcs_pe_armasm.asm"
+
+...failed Jamfile</D:/sdk/android-ndk-r8b/sources/boost/libs/context/build>.armasm bin.v2\libs\context\build\gcc-android4.4.3\release\address-model-32\architecture-arm\link-static\runtime-link-static\target-os-linux\threading-multi\asm\make_arm_aapcs_pe_armasm.o...
+Jamfile</D:/sdk/android-ndk-r8b/sources/boost/libs/context/build>.armasm bin.v2\libs\context\build\gcc-android4.4.3\release\address-model-32\architecture-arm\link-static\runtime-link-static\target-os-linux\threading-multi\asm\jump_arm_aapcs_pe_armasm.o
+'armasm' is not recognized as an internal or external command,
+operable program or batch file.
+
+    armasm "bin.v2\libs\context\build\gcc-android4.4.3\release\address-model-32\architecture-arm\link-static\runtime-link-static\target-os-linux\threading-multi\asm\jump_arm_aapcs_pe_armasm.o" "libs\context\src\asm\jump_arm_aapcs_pe_armasm.asm"
+
+...failed Jamfile</D:/sdk/android-ndk-r8b/sources/boost/libs/context/build>.armasm bin.v2\libs\context\build\gcc-android4.4.3\release\address-model-32\architecture-arm\link-static\runtime-link-static\target-os-linux\threading-multi\asm\jump_arm_aapcs_pe_armasm.o...
+...skipped <pbin.v2\libs\context\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_context-gcc-mt-s-1_53.a(clean) for lack of <pbin.v2\libs\context\build\gcc-android4.4.3\release\address-model-32\architecture-arm\link-static\runtime-link-static\target-os-linux\threading-multi>asm\make_arm_aapcs_pe_armasm.o...
+...skipped <pbin.v2\libs\context\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_context-gcc-mt-s-1_53.a for lack of <pbin.v2\libs\context\build\gcc-android4.4.3\release\address-model-32\architecture-arm\link-static\runtime-link-static\target-os-linux\threading-multi>asm\make_arm_aapcs_pe_armasm.o...
+...skipped <pandroid\lib>libboost_context-gcc-mt-s-1_53.a for lack of <pbin.v2\libs\context\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_context-gcc-mt-s-1_53.a...
+gcc.compile.c++ bin.v2\libs\filesystem\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\operations.o
+libs\filesystem\src\operations.cpp:77:30: error: sys/statvfs.h: No such file or directory
+libs\filesystem\src\operations.cpp: In function 'boost::filesystem::space_info boost::filesystem::detail::space(const boost::filesystem::path&, boost::system::error_code*)':
+libs\filesystem\src\operations.cpp:1562: error: aggregate 'boost::filesystem::detail::statvfs vfs' has incomplete type and cannot be defined
+libs\filesystem\src\operations.cpp:1564: error: '::statvfs' has not been declared
+
+    "d:/sdk/android-ndk-r8b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/arm-linux-androideabi-g++"  -ftemplate-depth-128 -O3 -finline-functions -Wno-inline -Wall --sysroot=d:/sdk/android-ndk-r8b/platforms/android-9/arch-arm -mthumb -Os -fno-strict-aliasing -O2 -DNDEBUG -g -lstdc++ -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/include -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/include -D__GLIBC__ -D_GLIBCXX__PTHREADS -D__arm__ -D_REENTRANT -DBOOST_NO_INTRINSIC_WCHAR_T -DBOOST_FILESYSTEM_VERSION=3 -pthread  -DBOOST_ALL_NO_LIB=1 -DBOOST_FILESYSTEM_STATIC_LINK=1 -DBOOST_SYSTEM_STATIC_LINK=1 -DNDEBUG  -I"." -c -o "bin.v2\libs\filesystem\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\operations.o" "libs\filesystem\src\operations.cpp"
+
+...failed gcc.compile.c++ bin.v2\libs\filesystem\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\operations.o...
+...skipped <pbin.v2\libs\filesystem\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_filesystem-gcc-mt-s-1_53.a(clean) for lack of <pbin.v2\libs\filesystem\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>operations.o...
+...skipped <pbin.v2\libs\filesystem\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_filesystem-gcc-mt-s-1_53.a for lack of <pbin.v2\libs\filesystem\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>operations.o...
+...skipped <pandroid\lib>libboost_filesystem-gcc-mt-s-1_53.a for lack of <pbin.v2\libs\filesystem\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_filesystem-gcc-mt-s-1_53.a...
+gcc.compile.c++ bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\cregex.o
+In file included from ./boost/regex/v4/regex_workaround.hpp:39,
+                 from ./boost/regex/v4/regex.hpp:32,
+                 from ./boost/regex.hpp:31,
+                 from libs\regex\build\..\src\cregex.cpp:22:
+./boost/cstdint.hpp:300:35: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:49: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:123: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:178: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:195: warning: use of C99 long long integer constant
+In file included from ./boost/functional/hash/hash.hpp:529,
+                 from ./boost/functional/hash.hpp:6,
+                 from ./boost/regex/v4/basic_regex.hpp:23,
+                 from ./boost/regex/v4/regex.hpp:67,
+                 from ./boost/regex.hpp:31,
+                 from libs\regex\build\..\src\cregex.cpp:22:
+./boost/functional/hash/extensions.hpp: In member function 'size_t boost::hash<T>::operator()(const T&) const [with T = wchar_t]':
+./boost/functional/hash/hash.hpp:249:   instantiated from 'void boost::hash_combine(size_t&, const T&) [with T = wchar_t]'
+./boost/functional/hash/hash.hpp:263:   instantiated from 'size_t boost::hash_range(It, It) [with It = __gnu_cxx::__normal_iterator<const wchar_t*, std::basic_string<wchar_t> >]'
+./boost/functional/hash/hash.hpp:322:   instantiated from 'size_t boost::hash_value(const std::basic_string<Ch, std::char_traits<_CharT>, A>&) [with Ch = wchar_t, A = std::allocator<wchar_t>]'
+./boost/functional/hash/hash.hpp:434:   instantiated from here
+./boost/functional/hash/extensions.hpp:269: error: no matching function for call to 'hash_value(const wchar_t&)'
+
+    "d:/sdk/android-ndk-r8b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/arm-linux-androideabi-g++"  -ftemplate-depth-128 -O3 -finline-functions -Wno-inline -Wall -pedantic --sysroot=d:/sdk/android-ndk-r8b/platforms/android-9/arch-arm -mthumb -Os -fno-strict-aliasing -O2 -DNDEBUG -g -lstdc++ -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/include -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/include -D__GLIBC__ -D_GLIBCXX__PTHREADS -D__arm__ -D_REENTRANT -DBOOST_NO_INTRINSIC_WCHAR_T -DBOOST_FILESYSTEM_VERSION=3 -pthread  -DBOOST_ALL_NO_LIB=1 -DNDEBUG  -I"." -c -o "bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\cregex.o" "libs\regex\build\..\src\cregex.cpp"
+
+...failed gcc.compile.c++ bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\cregex.o...
+gcc.compile.c++ bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\instances.o
+In file included from ./boost/regex/v4/regex_workaround.hpp:39,
+                 from ./boost/regex/v4/regex.hpp:32,
+                 from ./boost/regex.hpp:31,
+                 from libs\regex\build\..\src\instances.cpp:30:
+./boost/cstdint.hpp:300:35: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:49: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:123: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:178: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:195: warning: use of C99 long long integer constant
+In file included from ./boost/functional/hash/hash.hpp:529,
+                 from ./boost/functional/hash.hpp:6,
+                 from ./boost/regex/v4/basic_regex.hpp:23,
+                 from ./boost/regex/v4/regex.hpp:67,
+                 from ./boost/regex.hpp:31,
+                 from libs\regex\build\..\src\instances.cpp:30:
+./boost/functional/hash/extensions.hpp: In member function 'size_t boost::hash<T>::operator()(const T&) const [with T = wchar_t]':
+./boost/functional/hash/hash.hpp:249:   instantiated from 'void boost::hash_combine(size_t&, const T&) [with T = wchar_t]'
+./boost/functional/hash/hash.hpp:263:   instantiated from 'size_t boost::hash_range(It, It) [with It = __gnu_cxx::__normal_iterator<const wchar_t*, std::basic_string<wchar_t> >]'
+./boost/functional/hash/hash.hpp:322:   instantiated from 'size_t boost::hash_value(const std::basic_string<Ch, std::char_traits<_CharT>, A>&) [with Ch = wchar_t, A = std::allocator<wchar_t>]'
+./boost/functional/hash/hash.hpp:434:   instantiated from here
+./boost/functional/hash/extensions.hpp:269: error: no matching function for call to 'hash_value(const wchar_t&)'
+
+    "d:/sdk/android-ndk-r8b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/arm-linux-androideabi-g++"  -ftemplate-depth-128 -O3 -finline-functions -Wno-inline -Wall -pedantic --sysroot=d:/sdk/android-ndk-r8b/platforms/android-9/arch-arm -mthumb -Os -fno-strict-aliasing -O2 -DNDEBUG -g -lstdc++ -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/include -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/include -D__GLIBC__ -D_GLIBCXX__PTHREADS -D__arm__ -D_REENTRANT -DBOOST_NO_INTRINSIC_WCHAR_T -DBOOST_FILESYSTEM_VERSION=3 -pthread  -DBOOST_ALL_NO_LIB=1 -DNDEBUG  -I"." -c -o "bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\instances.o" "libs\regex\build\..\src\instances.cpp"
+
+...failed gcc.compile.c++ bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\instances.o...
+gcc.compile.c++ bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\posix_api.o
+In file included from ./boost/regex/v4/regex_workaround.hpp:39,
+                 from ./boost/regex/v4/regex.hpp:32,
+                 from ./boost/regex.hpp:31,
+                 from libs\regex\build\..\src\posix_api.cpp:23:
+./boost/cstdint.hpp:300:35: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:49: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:123: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:178: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:195: warning: use of C99 long long integer constant
+In file included from ./boost/functional/hash/hash.hpp:529,
+                 from ./boost/functional/hash.hpp:6,
+                 from ./boost/regex/v4/basic_regex.hpp:23,
+                 from ./boost/regex/v4/regex.hpp:67,
+                 from ./boost/regex.hpp:31,
+                 from libs\regex\build\..\src\posix_api.cpp:23:
+./boost/functional/hash/extensions.hpp: In member function 'size_t boost::hash<T>::operator()(const T&) const [with T = wchar_t]':
+./boost/functional/hash/hash.hpp:249:   instantiated from 'void boost::hash_combine(size_t&, const T&) [with T = wchar_t]'
+./boost/functional/hash/hash.hpp:263:   instantiated from 'size_t boost::hash_range(It, It) [with It = __gnu_cxx::__normal_iterator<const wchar_t*, std::basic_string<wchar_t> >]'
+./boost/functional/hash/hash.hpp:322:   instantiated from 'size_t boost::hash_value(const std::basic_string<Ch, std::char_traits<_CharT>, A>&) [with Ch = wchar_t, A = std::allocator<wchar_t>]'
+./boost/functional/hash/hash.hpp:434:   instantiated from here
+./boost/functional/hash/extensions.hpp:269: error: no matching function for call to 'hash_value(const wchar_t&)'
+
+    "d:/sdk/android-ndk-r8b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/arm-linux-androideabi-g++"  -ftemplate-depth-128 -O3 -finline-functions -Wno-inline -Wall -pedantic --sysroot=d:/sdk/android-ndk-r8b/platforms/android-9/arch-arm -mthumb -Os -fno-strict-aliasing -O2 -DNDEBUG -g -lstdc++ -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/include -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/include -D__GLIBC__ -D_GLIBCXX__PTHREADS -D__arm__ -D_REENTRANT -DBOOST_NO_INTRINSIC_WCHAR_T -DBOOST_FILESYSTEM_VERSION=3 -pthread  -DBOOST_ALL_NO_LIB=1 -DNDEBUG  -I"." -c -o "bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\posix_api.o" "libs\regex\build\..\src\posix_api.cpp"
+
+...failed gcc.compile.c++ bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\posix_api.o...
+gcc.compile.c++ bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\regex.o
+In file included from ./boost/regex/v4/regex_workaround.hpp:39,
+                 from ./boost/regex/v4/regex.hpp:32,
+                 from ./boost/regex.hpp:31,
+                 from libs\regex\build\..\src\regex.cpp:24:
+./boost/cstdint.hpp:300:35: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:49: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:123: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:178: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:195: warning: use of C99 long long integer constant
+In file included from ./boost/functional/hash/hash.hpp:529,
+                 from ./boost/functional/hash.hpp:6,
+                 from ./boost/regex/v4/basic_regex.hpp:23,
+                 from ./boost/regex/v4/regex.hpp:67,
+                 from ./boost/regex.hpp:31,
+                 from libs\regex\build\..\src\regex.cpp:24:
+./boost/functional/hash/extensions.hpp: In member function 'size_t boost::hash<T>::operator()(const T&) const [with T = wchar_t]':
+./boost/functional/hash/hash.hpp:249:   instantiated from 'void boost::hash_combine(size_t&, const T&) [with T = wchar_t]'
+./boost/functional/hash/hash.hpp:263:   instantiated from 'size_t boost::hash_range(It, It) [with It = __gnu_cxx::__normal_iterator<const wchar_t*, std::basic_string<wchar_t> >]'
+./boost/functional/hash/hash.hpp:322:   instantiated from 'size_t boost::hash_value(const std::basic_string<Ch, std::char_traits<_CharT>, A>&) [with Ch = wchar_t, A = std::allocator<wchar_t>]'
+./boost/functional/hash/hash.hpp:434:   instantiated from here
+./boost/functional/hash/extensions.hpp:269: error: no matching function for call to 'hash_value(const wchar_t&)'
+
+    "d:/sdk/android-ndk-r8b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/arm-linux-androideabi-g++"  -ftemplate-depth-128 -O3 -finline-functions -Wno-inline -Wall -pedantic --sysroot=d:/sdk/android-ndk-r8b/platforms/android-9/arch-arm -mthumb -Os -fno-strict-aliasing -O2 -DNDEBUG -g -lstdc++ -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/include -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/include -D__GLIBC__ -D_GLIBCXX__PTHREADS -D__arm__ -D_REENTRANT -DBOOST_NO_INTRINSIC_WCHAR_T -DBOOST_FILESYSTEM_VERSION=3 -pthread  -DBOOST_ALL_NO_LIB=1 -DNDEBUG  -I"." -c -o "bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\regex.o" "libs\regex\build\..\src\regex.cpp"
+
+...failed gcc.compile.c++ bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\regex.o...
+gcc.compile.c++ bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\wide_posix_api.o
+In file included from ./boost/regex/v4/regex_workaround.hpp:39,
+                 from ./boost/regex/v4/regex.hpp:32,
+                 from ./boost/regex.hpp:31,
+                 from libs\regex\build\..\src\wide_posix_api.cpp:25:
+./boost/cstdint.hpp:300:35: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:49: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:123: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:178: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:195: warning: use of C99 long long integer constant
+In file included from ./boost/functional/hash/hash.hpp:529,
+                 from ./boost/functional/hash.hpp:6,
+                 from ./boost/regex/v4/basic_regex.hpp:23,
+                 from ./boost/regex/v4/regex.hpp:67,
+                 from ./boost/regex.hpp:31,
+                 from libs\regex\build\..\src\wide_posix_api.cpp:25:
+./boost/functional/hash/extensions.hpp: In member function 'size_t boost::hash<T>::operator()(const T&) const [with T = wchar_t]':
+./boost/functional/hash/hash.hpp:249:   instantiated from 'void boost::hash_combine(size_t&, const T&) [with T = wchar_t]'
+./boost/functional/hash/hash.hpp:263:   instantiated from 'size_t boost::hash_range(It, It) [with It = __gnu_cxx::__normal_iterator<const wchar_t*, std::basic_string<wchar_t> >]'
+./boost/functional/hash/hash.hpp:322:   instantiated from 'size_t boost::hash_value(const std::basic_string<Ch, std::char_traits<_CharT>, A>&) [with Ch = wchar_t, A = std::allocator<wchar_t>]'
+./boost/functional/hash/hash.hpp:434:   instantiated from here
+./boost/functional/hash/extensions.hpp:269: error: no matching function for call to 'hash_value(const wchar_t&)'
+
+    "d:/sdk/android-ndk-r8b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/arm-linux-androideabi-g++"  -ftemplate-depth-128 -O3 -finline-functions -Wno-inline -Wall -pedantic --sysroot=d:/sdk/android-ndk-r8b/platforms/android-9/arch-arm -mthumb -Os -fno-strict-aliasing -O2 -DNDEBUG -g -lstdc++ -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/include -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/include -D__GLIBC__ -D_GLIBCXX__PTHREADS -D__arm__ -D_REENTRANT -DBOOST_NO_INTRINSIC_WCHAR_T -DBOOST_FILESYSTEM_VERSION=3 -pthread  -DBOOST_ALL_NO_LIB=1 -DNDEBUG  -I"." -c -o "bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\wide_posix_api.o" "libs\regex\build\..\src\wide_posix_api.cpp"
+
+...failed gcc.compile.c++ bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\wide_posix_api.o...
+gcc.compile.c++ bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\winstances.o
+In file included from ./boost/regex/v4/regex_workaround.hpp:39,
+                 from ./boost/regex/v4/regex.hpp:32,
+                 from ./boost/regex.hpp:31,
+                 from libs\regex\build\..\src\winstances.cpp:30:
+./boost/cstdint.hpp:300:35: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:49: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:105: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:123: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:178: warning: use of C99 long long integer constant
+./boost/cstdint.hpp:300:195: warning: use of C99 long long integer constant
+In file included from ./boost/functional/hash/hash.hpp:529,
+                 from ./boost/functional/hash.hpp:6,
+                 from ./boost/regex/v4/basic_regex.hpp:23,
+                 from ./boost/regex/v4/regex.hpp:67,
+                 from ./boost/regex.hpp:31,
+                 from libs\regex\build\..\src\winstances.cpp:30:
+./boost/functional/hash/extensions.hpp: In member function 'size_t boost::hash<T>::operator()(const T&) const [with T = wchar_t]':
+./boost/functional/hash/hash.hpp:249:   instantiated from 'void boost::hash_combine(size_t&, const T&) [with T = wchar_t]'
+./boost/functional/hash/hash.hpp:263:   instantiated from 'size_t boost::hash_range(It, It) [with It = __gnu_cxx::__normal_iterator<const wchar_t*, std::basic_string<wchar_t> >]'
+./boost/functional/hash/hash.hpp:322:   instantiated from 'size_t boost::hash_value(const std::basic_string<Ch, std::char_traits<_CharT>, A>&) [with Ch = wchar_t, A = std::allocator<wchar_t>]'
+./boost/functional/hash/hash.hpp:434:   instantiated from here
+./boost/functional/hash/extensions.hpp:269: error: no matching function for call to 'hash_value(const wchar_t&)'
+
+    "d:/sdk/android-ndk-r8b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/arm-linux-androideabi-g++"  -ftemplate-depth-128 -O3 -finline-functions -Wno-inline -Wall -pedantic --sysroot=d:/sdk/android-ndk-r8b/platforms/android-9/arch-arm -mthumb -Os -fno-strict-aliasing -O2 -DNDEBUG -g -lstdc++ -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/include -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/include -D__GLIBC__ -D_GLIBCXX__PTHREADS -D__arm__ -D_REENTRANT -DBOOST_NO_INTRINSIC_WCHAR_T -DBOOST_FILESYSTEM_VERSION=3 -pthread  -DBOOST_ALL_NO_LIB=1 -DNDEBUG  -I"." -c -o "bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\winstances.o" "libs\regex\build\..\src\winstances.cpp"
+
+...failed gcc.compile.c++ bin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\winstances.o...
+...skipped <pbin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_regex-gcc-mt-s-1_53.a(clean) for lack of <pbin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>cregex.o...
+...skipped <pbin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_regex-gcc-mt-s-1_53.a for lack of <pbin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>cregex.o...
+...skipped <pandroid\lib>libboost_regex-gcc-mt-s-1_53.a for lack of <pbin.v2\libs\regex\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_regex-gcc-mt-s-1_53.a...
+gcc.compile.c++ bin.v2\libs\graph\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\read_graphviz_new.o
+In file included from ./boost/functional/hash/hash.hpp:529,
+                 from ./boost/functional/hash.hpp:6,
+                 from ./boost/regex/v4/basic_regex.hpp:23,
+                 from ./boost/regex/v4/regex.hpp:67,
+                 from ./boost/regex.hpp:31,
+                 from libs\graph\src\read_graphviz_new.cpp:46:
+./boost/functional/hash/extensions.hpp: In member function 'size_t boost::hash<T>::operator()(const T&) const [with T = wchar_t]':
+./boost/functional/hash/hash.hpp:249:   instantiated from 'void boost::hash_combine(size_t&, const T&) [with T = wchar_t]'
+./boost/functional/hash/hash.hpp:263:   instantiated from 'size_t boost::hash_range(It, It) [with It = __gnu_cxx::__normal_iterator<const wchar_t*, std::basic_string<wchar_t> >]'
+./boost/functional/hash/hash.hpp:322:   instantiated from 'size_t boost::hash_value(const std::basic_string<Ch, std::char_traits<_CharT>, A>&) [with Ch = wchar_t, A = std::allocator<wchar_t>]'
+./boost/functional/hash/hash.hpp:434:   instantiated from here
+./boost/functional/hash/extensions.hpp:269: error: no matching function for call to 'hash_value(const wchar_t&)'
+
+    "d:/sdk/android-ndk-r8b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/arm-linux-androideabi-g++"  -ftemplate-depth-128 -O3 -finline-functions -Wno-inline -Wall --sysroot=d:/sdk/android-ndk-r8b/platforms/android-9/arch-arm -mthumb -Os -fno-strict-aliasing -O2 -DNDEBUG -g -lstdc++ -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/include -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/include -D__GLIBC__ -D_GLIBCXX__PTHREADS -D__arm__ -D_REENTRANT -DBOOST_NO_INTRINSIC_WCHAR_T -DBOOST_FILESYSTEM_VERSION=3 -pthread  -DBOOST_ALL_NO_LIB=1 -DNDEBUG  -I"." -I"libs\graph\src" -c -o "bin.v2\libs\graph\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\read_graphviz_new.o" "libs\graph\src\read_graphviz_new.cpp"
+
+...failed gcc.compile.c++ bin.v2\libs\graph\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\read_graphviz_new.o...
+gcc.compile.c++ bin.v2\libs\graph\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\graphml.o
+In file included from ./boost/functional/hash/hash.hpp:529,
+                 from ./boost/functional/hash.hpp:6,
+                 from ./boost/unordered/unordered_set.hpp:20,
+                 from ./boost/unordered_set.hpp:16,
+                 from ./boost/graph/adjacency_list.hpp:21,
+                 from ./boost/graph/graphviz.hpp:24,
+                 from ./boost/graph/graphml.hpp:20,
+                 from libs\graph\src\graphml.cpp:17:
+./boost/functional/hash/extensions.hpp: In member function 'size_t boost::hash<T>::operator()(const T&) const [with T = wchar_t]':
+./boost/functional/hash/hash.hpp:249:   instantiated from 'void boost::hash_combine(size_t&, const T&) [with T = wchar_t]'
+./boost/functional/hash/hash.hpp:263:   instantiated from 'size_t boost::hash_range(It, It) [with It = __gnu_cxx::__normal_iterator<const wchar_t*, std::basic_string<wchar_t> >]'
+./boost/functional/hash/hash.hpp:322:   instantiated from 'size_t boost::hash_value(const std::basic_string<Ch, std::char_traits<_CharT>, A>&) [with Ch = wchar_t, A = std::allocator<wchar_t>]'
+./boost/functional/hash/hash.hpp:434:   instantiated from here
+./boost/functional/hash/extensions.hpp:269: error: no matching function for call to 'hash_value(const wchar_t&)'
+
+    "d:/sdk/android-ndk-r8b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/arm-linux-androideabi-g++"  -ftemplate-depth-128 -O3 -finline-functions -Wno-inline -Wall --sysroot=d:/sdk/android-ndk-r8b/platforms/android-9/arch-arm -mthumb -Os -fno-strict-aliasing -O2 -DNDEBUG -g -lstdc++ -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/include -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/include -D__GLIBC__ -D_GLIBCXX__PTHREADS -D__arm__ -D_REENTRANT -DBOOST_NO_INTRINSIC_WCHAR_T -DBOOST_FILESYSTEM_VERSION=3 -pthread  -DBOOST_ALL_NO_LIB=1 -DNDEBUG  -I"." -I"libs\graph\src" -c -o "bin.v2\libs\graph\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\graphml.o" "libs\graph\src\graphml.cpp"
+
+...failed gcc.compile.c++ bin.v2\libs\graph\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\graphml.o...
+...skipped <pbin.v2\libs\graph\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_graph-gcc-mt-s-1_53.a(clean) for lack of <pbin.v2\libs\graph\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>read_graphviz_new.o...
+...skipped <pbin.v2\libs\graph\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_graph-gcc-mt-s-1_53.a for lack of <pbin.v2\libs\graph\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>read_graphviz_new.o...
+...skipped <pandroid\lib>libboost_graph-gcc-mt-s-1_53.a for lack of <pbin.v2\libs\graph\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_graph-gcc-mt-s-1_53.a...
+gcc.compile.c++ bin.v2\libs\thread\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\win32\thread.o
+libs\thread\src\win32\thread.cpp:31:21: error: process.h: No such file or directory
+libs\thread\src\win32\thread.cpp:34:21: error: windows.h: No such file or directory
+libs\thread\src\win32\thread.cpp:67: error: 'DWORD' does not name a type
+libs\thread\src\win32\thread.cpp: In function 'void boost::<unnamed>::create_current_thread_tls_key()':
+libs\thread\src\win32\thread.cpp:71: error: 'tss_cleanup_implemented' was not declared in this scope
+libs\thread\src\win32\thread.cpp:72: error: 'current_thread_tls_key' was not declared in this scope
+libs\thread\src\win32\thread.cpp:72: error: 'TlsAlloc' was not declared in this scope
+libs\thread\src\win32\thread.cpp: In function 'void boost::<unnamed>::cleanup_tls_key()':
+libs\thread\src\win32\thread.cpp:78: error: 'current_thread_tls_key' was not declared in this scope
+libs\thread\src\win32\thread.cpp:78: error: 'TLS_OUT_OF_INDEXES' was not declared in this scope
+libs\thread\src\win32\thread.cpp:80: error: 'TlsFree' was not declared in this scope
+libs\thread\src\win32\thread.cpp: In function 'void boost::<unnamed>::set_current_thread_data(boost::detail::thread_data_base*)':
+libs\thread\src\win32\thread.cpp:88: error: 'current_thread_tls_key' was not declared in this scope
+libs\thread\src\win32\thread.cpp:88: error: 'TLS_OUT_OF_INDEXES' was not declared in this scope
+libs\thread\src\win32\thread.cpp:90: error: 'TlsSetValue' was not declared in this scope
+libs\thread\src\win32\thread.cpp: In function 'boost::detail::thread_data_base* boost::detail::get_current_thread_data()':
+libs\thread\src\win32\thread.cpp:104: error: 'current_thread_tls_key' was not declared in this scope
+libs\thread\src\win32\thread.cpp:104: error: 'TLS_OUT_OF_INDEXES' was not declared in this scope
+libs\thread\src\win32\thread.cpp:108: error: 'current_thread_tls_key' was not declared in this scope
+libs\thread\src\win32\thread.cpp:108: error: 'TlsGetValue' was not declared in this scope
+libs\thread\src\win32\thread.cpp: At global scope:
+libs\thread\src\win32\thread.cpp:118: error: expected ')' before '*' token
+libs\thread\src\win32\thread.cpp:119: error: 'func' does not name a type
+libs\thread\src\win32\thread.cpp:121: error: expected ')' before 'start_address'
+libs\thread\src\win32\thread.cpp:124: error: 'DWORD' does not name a type
+libs\thread\src\win32\thread.cpp:133: error: expected ')' before '*' token
+libs\thread\src\win32\thread.cpp:133: error: expected ')' before '*' token
+libs\thread\src\win32\thread.cpp:133: error: expected initializer before '*' token
+libs\thread\src\win32\thread.cpp:749: error: expected '}' at end of input
+libs\thread\src\win32\thread.cpp:749: error: expected '}' at end of input
+In file included from ./boost/functional/hash/hash.hpp:529,
+                 from ./boost/functional/hash.hpp:6,
+                 from ./boost/thread/detail/thread.hpp:37,
+                 from ./boost/thread/thread.hpp:22,
+                 from libs\thread\src\win32\thread.cpp:17:
+./boost/functional/hash/extensions.hpp: In member function 'size_t boost::hash<T>::operator()(const T&) const [with T = wchar_t]':
+./boost/functional/hash/hash.hpp:249:   instantiated from 'void boost::hash_combine(size_t&, const T&) [with T = wchar_t]'
+./boost/functional/hash/hash.hpp:263:   instantiated from 'size_t boost::hash_range(It, It) [with It = __gnu_cxx::__normal_iterator<const wchar_t*, std::basic_string<wchar_t> >]'
+./boost/functional/hash/hash.hpp:322:   instantiated from 'size_t boost::hash_value(const std::basic_string<Ch, std::char_traits<_CharT>, A>&) [with Ch = wchar_t, A = std::allocator<wchar_t>]'
+./boost/functional/hash/hash.hpp:434:   instantiated from here
+./boost/functional/hash/extensions.hpp:269: error: no matching function for call to 'hash_value(const wchar_t&)'
+./boost/system/error_code.hpp: At global scope:
+./boost/system/error_code.hpp:214: warning: 'boost::system::posix_category' defined but not used
+./boost/system/error_code.hpp:215: warning: 'boost::system::errno_ecat' defined but not used
+./boost/system/error_code.hpp:216: warning: 'boost::system::native_ecat' defined but not used
+
+    "d:/sdk/android-ndk-r8b/toolchains/arm-linux-androideabi-4.4.3/prebuilt/windows/bin/arm-linux-androideabi-g++"  -ftemplate-depth-128 -O3 -finline-functions -Wno-inline -Wall -pedantic --sysroot=d:/sdk/android-ndk-r8b/platforms/android-9/arch-arm -mthumb -Os -fno-strict-aliasing -O2 -DNDEBUG -g -lstdc++ -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/include -Id:/sdk/android-ndk-r8b/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/include -D__GLIBC__ -D_GLIBCXX__PTHREADS -D__arm__ -D_REENTRANT -DBOOST_NO_INTRINSIC_WCHAR_T -DBOOST_FILESYSTEM_VERSION=3 -pthread -Wextra -Wno-long-long -pedantic -DBOOST_ALL_NO_LIB=1 -DBOOST_SYSTEM_STATIC_LINK=1 -DBOOST_THREAD_BUILD_LIB=1 -DBOOST_THREAD_DONT_USE_CHRONO -DNDEBUG  -I"." -c -o "bin.v2\libs\thread\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\win32\thread.o" "libs\thread\src\win32\thread.cpp"
+
+...failed gcc.compile.c++ bin.v2\libs\thread\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi\win32\thread.o...
+...skipped <pbin.v2\libs\thread\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_thread-gcc-mt-s-1_53.a(clean) for lack of <pbin.v2\libs\thread\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>win32\thread.o...
+...skipped <pbin.v2\libs\thread\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_thread-gcc-mt-s-1_53.a for lack of <pbin.v2\libs\thread\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>win32\thread.o...
+...skipped <pandroid\lib>libboost_thread-gcc-mt-s-1_53.a for lack of <pbin.v2\libs\thread\build\gcc-android4.4.3\release\link-static\runtime-link-static\target-os-linux\threading-multi>libboost_thread-gcc-mt-s-1_53.a...
+...failed updating 12 targets...
+...skipped 15 targets...
