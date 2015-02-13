@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <vector>
-#include <libs/apdos/kernel/actor/actor.h>
+#include <apdos/kernel/actor/actor.h>
 
 namespace apdos {
   namespace kernel {

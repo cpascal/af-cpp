@@ -1,6 +1,6 @@
 #include <iostream>
-#include <libs/apdos/libs/json/value.h>
-#include <libs/apdos/libs/json/writer.h>
+#include <apdos/libs/json/value.h>
+#include <apdos/libs/json/writer.h>
 #include <utility>
 #include <stdexcept>
 #include <cstring>

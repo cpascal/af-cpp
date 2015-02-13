@@ -4,8 +4,8 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#include <libs/apdos/kernel/actor/component.h>
-#include <libs/apdos/kernel/event/event.h>
+#include <apdos/kernel/actor/component.h>
+#include <apdos/kernel/event/event.h>
 #include <boost/asio.hpp>
 #include <boost/thread.hpp>
 

@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <map>
-#include <libs/apdos/kernel/event/event.h>
+#include <apdos/kernel/event/event.h>
 #include <boost/shared_ptr.hpp>
 #include <boost/any.hpp>
 

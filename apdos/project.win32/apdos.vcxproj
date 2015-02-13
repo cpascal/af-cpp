@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5E06DAC5-8E10-49AB-9D9C-DD569F1FC9B5}</ProjectGuid>
+    <RootNamespace>acdt</RootNamespace>
+    <ProjectName>apdos</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)\..;$(ProjectDir)\..\apdos\libs\boost_1_53_0;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\..\apdos\libs\boost_1_53_0\stage\lib_win;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\apdos\kernel\actor\actor.cpp" />
+    <ClCompile Include="..\apdos\kernel\actor\actor_connecter.cpp" />
+    <ClCompile Include="..\apdos\kernel\actor\component.cpp" />
+    <ClCompile Include="..\apdos\kernel\actor\events\proxy_event.cpp" />
+    <ClCompile Include="..\apdos\kernel\actor\null_actor.cpp" />
+    <ClCompile Include="..\apdos\kernel\actor\root_actor.cpp" />
+    <ClCompile Include="..\apdos\kernel\event\event.cpp" />
+    <ClCompile Include="..\apdos\kernel\event\event_dispatcher.cpp" />
+    <ClCompile Include="..\apdos\kernel\kernel.cpp" />
+    <ClCompile Include="..\apdos\kernel\node.cpp" />
+    <ClCompile Include="..\apdos\kernel\null_node.cpp" />
+    <ClCompile Include="..\apdos\kernel\root_node.cpp" />
+    <ClCompile Include="..\apdos\libs\json\json_reader.cpp" />
+    <ClCompile Include="..\apdos\libs\json\json_value.cpp" />
+    <ClCompile Include="..\apdos\libs\json\json_writer.cpp" />
+    <ClCompile Include="..\apdos\plugins\uuid\object_id.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\apdos\kernel\actor\actor.h" />
+    <ClInclude Include="..\apdos\kernel\actor\actor_connecter.h" />
+    <ClInclude Include="..\apdos\kernel\actor\component.h" />
+    <ClInclude Include="..\apdos\kernel\actor\events\proxy_event.h" />
+    <ClInclude Include="..\apdos\kernel\actor\null_actor.h" />
+    <ClInclude Include="..\apdos\kernel\actor\root_actor.h" />
+    <ClInclude Include="..\apdos\kernel\event\event.h" />
+    <ClInclude Include="..\apdos\kernel\event\event_dispatcher.h" />
+    <ClInclude Include="..\apdos\kernel\kernel.h" />
+    <ClInclude Include="..\apdos\kernel\node.h" />
+    <ClInclude Include="..\apdos\kernel\null_node.h" />
+    <ClInclude Include="..\apdos\kernel\root_node.h" />
+    <ClInclude Include="..\apdos\libs\json\autolink.h" />
+    <ClInclude Include="..\apdos\libs\json\config.h" />
+    <ClInclude Include="..\apdos\libs\json\features.h" />
+    <ClInclude Include="..\apdos\libs\json\forwards.h" />
+    <ClInclude Include="..\apdos\libs\json\json.h" />
+    <ClInclude Include="..\apdos\libs\json\json_batchallocator.h" />
+    <ClInclude Include="..\apdos\libs\json\reader.h" />
+    <ClInclude Include="..\apdos\libs\json\value.h" />
+    <ClInclude Include="..\apdos\libs\json\writer.h" />
+    <ClInclude Include="..\apdos\plugins\uuid\null_object_id.h" />
+    <ClInclude Include="..\apdos\plugins\uuid\object_id.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\apdos\kernel\README" />
+    <None Include="..\apdos\libs\json\json_internalarray.inl" />
+    <None Include="..\apdos\libs\json\json_internalmap.inl" />
+    <None Include="..\apdos\libs\json\json_valueiterator.inl" />
+    <None Include="..\apdos\libs\json\sconscript" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

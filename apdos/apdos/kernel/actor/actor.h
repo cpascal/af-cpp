@@ -3,9 +3,9 @@
 
 #include <iostream>
 #include <vector>
-#include <libs/apdos/kernel/actor/component.h>
-#include <libs/apdos/kernel/event/event.h>
-#include <libs/apdos/kernel/root_node.h>
+#include <apdos/kernel/actor/component.h>
+#include <apdos/kernel/event/event.h>
+#include <apdos/kernel/root_node.h>
 #include <boost/smart_ptr.hpp>
 
 namespace apdos {

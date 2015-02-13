@@ -1,12 +1,12 @@
 #include "actor_connecter.h"
-#include <libs/apdos/kernel/actor/events/proxy_event.h>
+#include <apdos/kernel/actor/events/proxy_event.h>
 #include <string>
 #include <boost/tokenizer.hpp>
 #include <boost/bind.hpp>
 #include <boost/lexical_cast.hpp>
-#include <libs/apdos/kernel/actor/events/proxy_event.h>
-#include <libs/apdos/kernel/kernel.h>
-#include <libs/apdos/kernel/actor/actor.h>
+#include <apdos/kernel/actor/events/proxy_event.h>
+#include <apdos/kernel/kernel.h>
+#include <apdos/kernel/actor/actor.h>
 
 typedef boost::tokenizer<boost::char_separator<char> > tokenizer;
 

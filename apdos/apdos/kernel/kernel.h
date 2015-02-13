@@ -3,8 +3,8 @@
 
 #include <boost/shared_ptr.hpp>
 #include <map>
-#include <libs/apdos/kernel/node.h>
-#include <libs/apdos/kernel/null_node.h>
+#include <apdos/kernel/node.h>
+#include <apdos/kernel/null_node.h>
 
 namespace apdos {
   namespace kernel {

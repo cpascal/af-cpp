@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="kernel">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="plugins">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="services">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="kernel\event">
+      <UniqueIdentifier>{82d9ce2e-e155-4ad0-bece-b0396980c49e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\actor">
+      <UniqueIdentifier>{68e3950d-0f81-4200-b2fd-c285ed5defa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\actor\events">
+      <UniqueIdentifier>{a3ce8634-26a3-46c2-aaec-f1f3015dfa4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="plugins\uuid">
+      <UniqueIdentifier>{c9857d15-2fcd-4add-9b5c-9cad6d767ba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs">
+      <UniqueIdentifier>{5a89ec4e-287a-413a-b417-191c35abf13f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs\json">
+      <UniqueIdentifier>{1489fbc4-1b56-4d3b-b125-73c7933b9ca7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\apdos\kernel\actor\events\proxy_event.cpp">
+      <Filter>kernel\actor\events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\kernel\actor\actor.cpp">
+      <Filter>kernel\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\kernel\actor\actor_connecter.cpp">
+      <Filter>kernel\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\kernel\actor\component.cpp">
+      <Filter>kernel\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\kernel\actor\null_actor.cpp">
+      <Filter>kernel\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\kernel\actor\root_actor.cpp">
+      <Filter>kernel\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\kernel\event\event.cpp">
+      <Filter>kernel\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\kernel\event\event_dispatcher.cpp">
+      <Filter>kernel\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\kernel\kernel.cpp">
+      <Filter>kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\kernel\node.cpp">
+      <Filter>kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\kernel\null_node.cpp">
+      <Filter>kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\kernel\root_node.cpp">
+      <Filter>kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\libs\json\json_reader.cpp">
+      <Filter>libs\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\libs\json\json_value.cpp">
+      <Filter>libs\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\libs\json\json_writer.cpp">
+      <Filter>libs\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\plugins\uuid\object_id.cpp">
+      <Filter>plugins\uuid</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\apdos\kernel\actor\events\proxy_event.h">
+      <Filter>kernel\actor\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\kernel\actor\actor.h">
+      <Filter>kernel\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\kernel\actor\actor_connecter.h">
+      <Filter>kernel\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\kernel\actor\component.h">
+      <Filter>kernel\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\kernel\actor\null_actor.h">
+      <Filter>kernel\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\kernel\actor\root_actor.h">
+      <Filter>kernel\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\kernel\event\event.h">
+      <Filter>kernel\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\kernel\event\event_dispatcher.h">
+      <Filter>kernel\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\kernel\kernel.h">
+      <Filter>kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\kernel\node.h">
+      <Filter>kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\kernel\null_node.h">
+      <Filter>kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\kernel\root_node.h">
+      <Filter>kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\autolink.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\config.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\features.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\forwards.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\json.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\json_batchallocator.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\reader.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\value.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\writer.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\plugins\uuid\null_object_id.h">
+      <Filter>plugins\uuid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\plugins\uuid\object_id.h">
+      <Filter>plugins\uuid</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\apdos\kernel\README">
+      <Filter>kernel</Filter>
+    </None>
+    <None Include="..\apdos\libs\json\json_internalarray.inl">
+      <Filter>libs\json</Filter>
+    </None>
+    <None Include="..\apdos\libs\json\json_internalmap.inl">
+      <Filter>libs\json</Filter>
+    </None>
+    <None Include="..\apdos\libs\json\json_valueiterator.inl">
+      <Filter>libs\json</Filter>
+    </None>
+    <None Include="..\apdos\libs\json\sconscript">
+      <Filter>libs\json</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -2,7 +2,7 @@
 #define APDOS_KERNEL_NULL_NODE_H
 
 #include <iostream>
-#include <libs/apdos/kernel/node.h>
+#include <apdos/kernel/node.h>
 
 namespace apdos {
   namespace kernel {

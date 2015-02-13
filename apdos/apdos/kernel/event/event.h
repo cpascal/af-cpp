@@ -6,7 +6,7 @@
 #include <vector>
 #include <boost/any.hpp>
 #include <boost/shared_ptr.hpp>
-#include <libs/apdos/libs/json/json.h>
+#include <apdos/libs/json/json.h>
 
 namespace apdos {
   namespace kernel {

@@ -1,4 +1,4 @@
-#include <libs/apdos/kernel/kernel.h>
+#include <apdos/kernel/kernel.h>
 #include "actor.h"
 #include "null_actor.h"
 
