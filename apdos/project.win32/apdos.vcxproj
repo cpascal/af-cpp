@@ -38,8 +38,9 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(ProjectDir)\..;$(ProjectDir)\..\apdos\libs\boost_1_53_0;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)\..\apdos\libs\boost_1_53_0\stage\lib_win;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)\..;$(ProjectDir)\..\exts\boost_1_53_0;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\..\exts\boost_1_53_0\stage\lib_win;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
