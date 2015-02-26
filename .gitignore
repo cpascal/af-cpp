@@ -1,5 +1,6 @@
 # Compiled Object files
 *.slo
+*.o
 *.lo
 *.obj
 
@@ -10,6 +11,8 @@
 # Compiled Dynamic libraries
 *.dylib
 *.dll
+*.lib
+*.a
 
 # Fortran module files
 *.mod
@@ -23,3 +26,8 @@
 *.out
 *.app
 *.debug
+*.tlog
+*.log
+*.pdb
+*.lastbuildstate
+*.idb
