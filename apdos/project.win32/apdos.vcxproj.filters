@@ -31,15 +31,15 @@
     <Filter Include="libs\json">
       <UniqueIdentifier>{1489fbc4-1b56-4d3b-b125-73c7933b9ca7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="kernel\actor\connecters">
+      <UniqueIdentifier>{5e664f26-c134-491f-be81-51fe770c8baf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\apdos\kernel\actor\events\proxy_event.cpp">
       <Filter>kernel\actor\events</Filter>
     </ClCompile>
     <ClCompile Include="..\apdos\kernel\actor\actor.cpp">
-      <Filter>kernel\actor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\apdos\kernel\actor\actor_connecter.cpp">
       <Filter>kernel\actor</Filter>
     </ClCompile>
     <ClCompile Include="..\apdos\kernel\actor\component.cpp">
@@ -81,15 +81,15 @@
     <ClCompile Include="..\apdos\plugins\uuid\object_id.cpp">
       <Filter>plugins\uuid</Filter>
     </ClCompile>
+    <ClCompile Include="..\apdos\kernel\actor\connecters\actor_connecter.cpp">
+      <Filter>kernel\actor\connecters</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\apdos\kernel\actor\events\proxy_event.h">
       <Filter>kernel\actor\events</Filter>
     </ClInclude>
     <ClInclude Include="..\apdos\kernel\actor\actor.h">
-      <Filter>kernel\actor</Filter>
-    </ClInclude>
-    <ClInclude Include="..\apdos\kernel\actor\actor_connecter.h">
       <Filter>kernel\actor</Filter>
     </ClInclude>
     <ClInclude Include="..\apdos\kernel\actor\component.h">
@@ -151,6 +151,9 @@
     </ClInclude>
     <ClInclude Include="..\apdos\plugins\uuid\object_id.h">
       <Filter>plugins\uuid</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\kernel\actor\connecters\actor_connecter.h">
+      <Filter>kernel\actor\connecters</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

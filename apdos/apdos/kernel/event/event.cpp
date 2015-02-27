@@ -49,6 +49,15 @@ void Event::serialize_object(Json::Value& value, Any_Map& properties) {
     if (p.type() == typeid(std::string)) {
       value[it->first] = boost::any_cast<std::string>(p);
     }
+    if (p.type() == typeid(int)) {
+      value[it->first] = boost::any_cast<int>(p);
+    }
+    if (p.type() == typeid(unsigned int)) {
+      value[it->first] = boost::any_cast<unsigned int>(p);
+    }
+    if (p.type() == typeid(double)) {
+      value[it->first] = boost::any_cast<double>(p);
+    }
     if (p.type() == typeid(Any_Vector_Shared_Ptr)) {
       Any_Vector_Shared_Ptr v = boost::any_cast<Any_Vector_Shared_Ptr>(p);
       value[it->first] = Json::Value();
@@ -68,6 +77,15 @@ void Event::serialize_array(Json::Value& store_value, Any_Vector& values) {
     boost::any p = values[i];
     if (p.type() == typeid(std::string)) {
       store_value.append(boost::any_cast<std::string>(p));
+    }
+    if (p.type() == typeid(int)) {
+      store_value.append(boost::any_cast<int>(p));
+    }
+    if (p.type() == typeid(unsigned int)) {
+      store_value.append(boost::any_cast<unsigned int>(p));
+    }
+    if (p.type() == typeid(double)) {
+      store_value.append(boost::any_cast<double>(p));
     }
     if (p.type() == typeid(Any_Vector_Shared_Ptr)) {
       Any_Vector_Shared_Ptr v = boost::any_cast<Any_Vector_Shared_Ptr>(p);
@@ -127,6 +145,21 @@ void Event::deserialize_object(Any_Map& store_map, std::string& key, Json::Value
   case Json::stringValue:
     {
       store_map[key] = boost::any(read_value.asString());
+    }
+    break;
+  case Json::intValue:
+    {
+      store_map[key] = boost::any(read_value.asInt());
+    }
+    break;
+  case Json::uintValue:
+    {
+      store_map[key] = boost::any(read_value.asUInt());
+    }
+    break;
+  case Json::realValue:
+    {
+      store_map[key] = boost::any(read_value.asDouble());
     }
     break;
   default:

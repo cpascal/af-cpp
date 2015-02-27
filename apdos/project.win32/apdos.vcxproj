@@ -39,7 +39,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(ProjectDir)\..;$(ProjectDir)\..\exts\boost_1_53_0;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)\..\exts\boost_1_53_0\stage\lib_win;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -66,8 +66,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\apdos\kernel\actor\actor.cpp" />
-    <ClCompile Include="..\apdos\kernel\actor\actor_connecter.cpp" />
     <ClCompile Include="..\apdos\kernel\actor\component.cpp" />
+    <ClCompile Include="..\apdos\kernel\actor\connecters\actor_connecter.cpp" />
     <ClCompile Include="..\apdos\kernel\actor\events\proxy_event.cpp" />
     <ClCompile Include="..\apdos\kernel\actor\null_actor.cpp" />
     <ClCompile Include="..\apdos\kernel\actor\root_actor.cpp" />
@@ -84,8 +84,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\apdos\kernel\actor\actor.h" />
-    <ClInclude Include="..\apdos\kernel\actor\actor_connecter.h" />
     <ClInclude Include="..\apdos\kernel\actor\component.h" />
+    <ClInclude Include="..\apdos\kernel\actor\connecters\actor_connecter.h" />
     <ClInclude Include="..\apdos\kernel\actor\events\proxy_event.h" />
     <ClInclude Include="..\apdos\kernel\actor\null_actor.h" />
     <ClInclude Include="..\apdos\kernel\actor\root_actor.h" />

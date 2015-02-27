@@ -2,7 +2,7 @@
 #define APDOS_KERNEL_EVENT_EVENT_DISPATCHER_H
 
 #include <iostream>
-#include <boost/signal.hpp>
+#include <boost/signals2.hpp>
 #include <boost/ptr_container/ptr_map.hpp>
 #include "event.h"
 
@@ -10,7 +10,7 @@ namespace apdos {
   namespace kernel {
     namespace event {
       class Event_Dispatcher {
-        typedef boost::signal<void (Event& event)> Event_Callback;
+        typedef boost::signals2::signal<void (Event& event)> Event_Callback;
 
       public:
         Event_Dispatcher();

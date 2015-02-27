@@ -2,10 +2,12 @@
 #define APDOS_PLUGINS_UUID_OBJECT_ID_H
 
 #include <iostream>
+#include <boost\shared_ptr.hpp>
 
 namespace apdos {
   namespace plugins {
     namespace uuid {
+
       class Object_Id {
       public:
         Object_Id();
@@ -24,5 +26,7 @@ namespace apdos {
     }
   }
 }
+
+typedef boost::shared_ptr<apdos::plugins::uuid::Object_Id> Object_Id_Shared_Ptr;
 
 #endif //APDOS_PLUGINS_UUID_OBJECT_ID_H

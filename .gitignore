@@ -2,6 +2,7 @@
 *.slo
 *.lo
 *.obj
+*.o
 
 # Precompiled Headers
 *.gch
@@ -17,6 +18,9 @@
 # Compiled Static libraries
 *.lai
 *.la
+*.lib
+*.so
+*.a
 
 # Executables
 *.exe
