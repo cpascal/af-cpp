@@ -13,7 +13,7 @@ namespace apdos {
       namespace connecters {
         class Actor_Connecter: public Component {
         public:
-          static const int READ_BUFFER_SIZE = 1024;
+          static const int READ_BUFFER_SIZE = 8192;
 
           Actor_Connecter();
           virtual ~Actor_Connecter();
