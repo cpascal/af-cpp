@@ -69,6 +69,12 @@
     <ClCompile Include="..\apdos\kernel\root_node.cpp">
       <Filter>kernel</Filter>
     </ClCompile>
+    <ClCompile Include="..\apdos\plugins\uuid\object_id.cpp">
+      <Filter>plugins\uuid</Filter>
+    </ClCompile>
+    <ClCompile Include="..\apdos\kernel\actor\connecters\actor_connecter.cpp">
+      <Filter>kernel\actor\connecters</Filter>
+    </ClCompile>
     <ClCompile Include="..\apdos\libs\json\json_reader.cpp">
       <Filter>libs\json</Filter>
     </ClCompile>
@@ -77,12 +83,6 @@
     </ClCompile>
     <ClCompile Include="..\apdos\libs\json\json_writer.cpp">
       <Filter>libs\json</Filter>
-    </ClCompile>
-    <ClCompile Include="..\apdos\plugins\uuid\object_id.cpp">
-      <Filter>plugins\uuid</Filter>
-    </ClCompile>
-    <ClCompile Include="..\apdos\kernel\actor\connecters\actor_connecter.cpp">
-      <Filter>kernel\actor\connecters</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -119,33 +119,6 @@
     <ClInclude Include="..\apdos\kernel\root_node.h">
       <Filter>kernel</Filter>
     </ClInclude>
-    <ClInclude Include="..\apdos\libs\json\autolink.h">
-      <Filter>libs\json</Filter>
-    </ClInclude>
-    <ClInclude Include="..\apdos\libs\json\config.h">
-      <Filter>libs\json</Filter>
-    </ClInclude>
-    <ClInclude Include="..\apdos\libs\json\features.h">
-      <Filter>libs\json</Filter>
-    </ClInclude>
-    <ClInclude Include="..\apdos\libs\json\forwards.h">
-      <Filter>libs\json</Filter>
-    </ClInclude>
-    <ClInclude Include="..\apdos\libs\json\json.h">
-      <Filter>libs\json</Filter>
-    </ClInclude>
-    <ClInclude Include="..\apdos\libs\json\json_batchallocator.h">
-      <Filter>libs\json</Filter>
-    </ClInclude>
-    <ClInclude Include="..\apdos\libs\json\reader.h">
-      <Filter>libs\json</Filter>
-    </ClInclude>
-    <ClInclude Include="..\apdos\libs\json\value.h">
-      <Filter>libs\json</Filter>
-    </ClInclude>
-    <ClInclude Include="..\apdos\libs\json\writer.h">
-      <Filter>libs\json</Filter>
-    </ClInclude>
     <ClInclude Include="..\apdos\plugins\uuid\null_object_id.h">
       <Filter>plugins\uuid</Filter>
     </ClInclude>
@@ -154,6 +127,36 @@
     </ClInclude>
     <ClInclude Include="..\apdos\kernel\actor\connecters\actor_connecter.h">
       <Filter>kernel\actor\connecters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\json\autolink.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\json\config.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\json\features.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\json\forwards.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\json\json.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\json\reader.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\json\value.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\json\writer.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\json_batchallocator.h">
+      <Filter>libs\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\apdos\libs\json\json_tool.h">
+      <Filter>libs\json</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -167,9 +170,6 @@
       <Filter>libs\json</Filter>
     </None>
     <None Include="..\apdos\libs\json\json_valueiterator.inl">
-      <Filter>libs\json</Filter>
-    </None>
-    <None Include="..\apdos\libs\json\sconscript">
       <Filter>libs\json</Filter>
     </None>
   </ItemGroup>

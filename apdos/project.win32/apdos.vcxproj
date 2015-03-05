@@ -46,6 +46,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\apdos\libs\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -95,15 +96,16 @@
     <ClInclude Include="..\apdos\kernel\node.h" />
     <ClInclude Include="..\apdos\kernel\null_node.h" />
     <ClInclude Include="..\apdos\kernel\root_node.h" />
-    <ClInclude Include="..\apdos\libs\json\autolink.h" />
-    <ClInclude Include="..\apdos\libs\json\config.h" />
-    <ClInclude Include="..\apdos\libs\json\features.h" />
-    <ClInclude Include="..\apdos\libs\json\forwards.h" />
-    <ClInclude Include="..\apdos\libs\json\json.h" />
+    <ClInclude Include="..\apdos\libs\json\json\autolink.h" />
+    <ClInclude Include="..\apdos\libs\json\json\config.h" />
+    <ClInclude Include="..\apdos\libs\json\json\features.h" />
+    <ClInclude Include="..\apdos\libs\json\json\forwards.h" />
+    <ClInclude Include="..\apdos\libs\json\json\json.h" />
+    <ClInclude Include="..\apdos\libs\json\json\reader.h" />
+    <ClInclude Include="..\apdos\libs\json\json\value.h" />
+    <ClInclude Include="..\apdos\libs\json\json\writer.h" />
     <ClInclude Include="..\apdos\libs\json\json_batchallocator.h" />
-    <ClInclude Include="..\apdos\libs\json\reader.h" />
-    <ClInclude Include="..\apdos\libs\json\value.h" />
-    <ClInclude Include="..\apdos\libs\json\writer.h" />
+    <ClInclude Include="..\apdos\libs\json\json_tool.h" />
     <ClInclude Include="..\apdos\plugins\uuid\null_object_id.h" />
     <ClInclude Include="..\apdos\plugins\uuid\object_id.h" />
   </ItemGroup>
@@ -112,7 +114,6 @@
     <None Include="..\apdos\libs\json\json_internalarray.inl" />
     <None Include="..\apdos\libs\json\json_internalmap.inl" />
     <None Include="..\apdos\libs\json\json_valueiterator.inl" />
-    <None Include="..\apdos\libs\json\sconscript" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
