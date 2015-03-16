@@ -2,8 +2,7 @@
 #define APDOS_PLUGINS_UUID_OBJECT_ID_H
 
 #include <iostream>
-#include <boost\shared_ptr.hpp>
-
+#include <boost/shared_ptr.hpp>
 namespace apdos {
   namespace plugins {
     namespace uuid {

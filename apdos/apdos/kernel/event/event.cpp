@@ -58,8 +58,8 @@ void Event::serialize_object(Json::Value& value, Any_Map& properties) {
     if (p.type() == typeid(double)) {
       value[it->first] = boost::any_cast<double>(p);
     }
-    if (p.type() == typeid(__int64)) {
-      value[it->first] = boost::any_cast<__int64>(p);
+    if (p.type() == typeid(unsigned long long)) {
+      value[it->first] = boost::any_cast<unsigned long long>(p);
     }
     if (p.type() == typeid(Any_Vector_Shared_Ptr)) {
       Any_Vector_Shared_Ptr v = boost::any_cast<Any_Vector_Shared_Ptr>(p);
@@ -90,8 +90,8 @@ void Event::serialize_array(Json::Value& store_value, Any_Vector& values) {
     if (p.type() == typeid(double)) {
       store_value.append(boost::any_cast<double>(p));
     }
-    if (p.type() == typeid(__int64)) {
-      store_value.append(boost::any_cast<__int64>(p));
+    if (p.type() == typeid(unsigned long long)) {
+      store_value.append(boost::any_cast<unsigned long long>(p));
     }
     if (p.type() == typeid(Any_Vector_Shared_Ptr)) {
       Any_Vector_Shared_Ptr v = boost::any_cast<Any_Vector_Shared_Ptr>(p);
